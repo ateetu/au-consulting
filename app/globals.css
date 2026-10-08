@@ -55,7 +55,7 @@
   --border: oklch(0.91 0.01 255);
   --input: oklch(0.88 0.012 255);
   --ring: oklch(0.55 0.15 255);
-  --navy: oklch(0.2 0.05 262);
+  --navy: #0c1830;
   --navy-foreground: oklch(0.97 0.006 255);
   --signal: oklch(0.72 0.13 230);
   --radius: 0.5rem;

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { ArrowRight, PlayCircle } from 'lucide-react'
 
 const ticker = [
@@ -15,9 +16,19 @@ export function Hero() {
           <span className="size-1.5 animate-pulse rounded-full bg-signal" aria-hidden="true" />
           Finance &times; Technology Consulting
         </p>
-        <h1 className="mt-6 max-w-4xl text-balance text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
-          Bridging Enterprise Finance and Next-Gen Technology.
-        </h1>
+        <div className="mt-6 flex flex-col-reverse gap-6 md:flex-row md:items-center md:justify-between md:gap-10">
+          <h1 className="max-w-3xl text-balance text-4xl font-semibold leading-tight tracking-tight md:text-6xl">
+            Bridging Enterprise Finance and Next-Gen Technology.
+          </h1>
+          <Image
+            src="/brand/logo-mark.png"
+            alt="Ateet Upadhyaya Business Consulting monogram"
+            width={275}
+            height={245}
+            priority
+            className="h-auto w-24 shrink-0 [mask-image:radial-gradient(closest-side,black_70%,transparent)] md:w-56"
+          />
+        </div>
         <p className="mt-6 max-w-2xl text-pretty text-lg leading-relaxed text-navy-foreground/70">
           I help businesses automate workflows, uncover revenue leaks, and build intelligent data systems. I don&apos;t
           just advise &mdash; I build the dashboards, apps, and automations that execute the strategy.
