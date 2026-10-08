@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 import { Menu, X } from 'lucide-react'
 
 const links = [
@@ -16,14 +17,21 @@ export function SiteHeader() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 border-b border-white/10 bg-navy/85 text-navy-foreground backdrop-blur-md">
       <div className="mx-auto flex h-16 max-w-6xl items-center justify-between px-6">
-        <a href="#top" className="flex items-center gap-2.5 font-semibold tracking-tight">
-          <span
-            aria-hidden="true"
-            className="grid size-7 place-items-center rounded-sm bg-signal font-mono text-xs font-bold text-navy"
-          >
-            K
+        <a href="#top" className="flex items-center gap-3">
+          <Image
+            src="/brand/logo-mark.png"
+            alt=""
+            width={275}
+            height={245}
+            priority
+            className="h-10 w-auto rounded-md ring-1 ring-white/10"
+          />
+          <span className="flex flex-col leading-tight">
+            <span className="text-sm font-semibold tracking-wide uppercase">Ateet Upadhyaya</span>
+            <span className="text-[10px] font-medium tracking-[0.2em] text-navy-foreground/60 uppercase">
+              Business Consulting
+            </span>
           </span>
-          Keystone Advisory
         </a>
 
         <nav aria-label="Primary" className="hidden items-center gap-8 md:flex">

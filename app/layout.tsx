@@ -7,7 +7,7 @@ const geist = Geist({ subsets: ['latin'], variable: '--font-geist' })
 const geistMono = Geist_Mono({ subsets: ['latin'], variable: '--font-geist-mono' })
 
 export const metadata: Metadata = {
-  title: 'Keystone Advisory | Enterprise Finance meets Next-Gen Technology',
+  title: 'Ateet Upadhyaya Business Consulting | Finance, Technology, Strategy',
   description:
     'Executive consulting that bridges financial strategy with technical execution: revenue operations, Power BI and SQL dashboards, AI automation, and Workday, SAP, and Concur implementations.',
   generator: 'v0.app',
